@@ -37,6 +37,9 @@ else:
 
 result = ''
 for c in flag:
-    result += random.sample(candidates[c], 1)[0]
+    if c in string.ascii_letters + string.digits:
+        result += random.sample(candidates[c], 1)[0]
+    else:
+        result += c
 
 print(prefix + result + postfix)
