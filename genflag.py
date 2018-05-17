@@ -5,7 +5,7 @@ import string
 import random
 
 if len(sys.argv) != 2:
-    print("USAGE : ./genflag.py FLAG{xxxxx}")
+    print("USAGE : ./genflag.py <flag>")
     exit(0)
 
 flag = sys.argv[1]
